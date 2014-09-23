@@ -10,4 +10,4 @@ alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
 for i in range(len(alphabet)):
     for j in range(i, len(alphabet)):
         if i != j:
-            print(alphabet[i], alphabet[j])
+            print(alphabet[i]+alphabet[j])
