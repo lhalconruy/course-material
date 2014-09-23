@@ -1,9 +1,5 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Sep 23 17:32:51 2014
-
-@author: Louis
-"""
-
-
-def is_prime()
+def is_prime(num):
+    for i in range(2, num-1):
+        if num % i == 0:
+            return False
+    return True
