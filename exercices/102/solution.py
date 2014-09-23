@@ -51,7 +51,7 @@ velib = [
      }]
 
 
-def check_my_city(city_num):
+def check_my_station(city_num):
     n = 0
     z = []
     for i in range(len(velib)):
