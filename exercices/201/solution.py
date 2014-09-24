@@ -5,6 +5,6 @@ def is_alpha(input):
                 "y", "z"]
 
     for i in linput:
-        if (i not in alphabet) or (i.lower() not in alphabet):
+        if (i not in alphabet) and (i.lower() not in alphabet):
             return False
     return True
