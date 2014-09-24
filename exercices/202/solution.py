@@ -1,5 +1,6 @@
 def starts_with(A, B):
-    sA = A.split(B)
-    if sA[0] == '':
+    sA = str(A)
+    sB = str(B)
+    if sA[0:len(sB)] == sB:
         return True
     return False
