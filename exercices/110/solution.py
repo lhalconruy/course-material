@@ -1,20 +1,25 @@
 import sys
 
-try:
-    a = int(sys.argv[1])
-    b = int(sys.argv[3])
-    z = sys.argv[2]
+if len(sys.argv) <= 1:
+    print('usage: python3 ./solution.py', 'a_number', '(an_operator +-*/%^)',
+          'a_number')
 
-    if z == '+':
-        r = a + b
-    elif z == '-':
-        r = a - b
-    elif z == '*':
-        r = a * b
-    elif z == '/':
-        r = a / b
+else:
+    try:
+        a = int(sys.argv[1])
+        b = int(sys.argv[3])
+        z = sys.argv[2]
 
-    print(r)
+        if z == '+':
+            r = a + b
+        elif z == '-':
+            r = a - b
+        elif z == '*':
+            r = a * b
+        elif z == '/':
+            r = a / b
 
-except:
-    print('input error')
+        print(r)
+
+    except:
+        print('input error')
